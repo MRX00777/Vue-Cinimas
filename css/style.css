@@ -47,7 +47,7 @@
 
 .container {
     max-width: 1180px;
-    padding: 15px;
+    padding: 0  15px;
     width: 100%;
     margin: 0 auto;
 }
@@ -56,6 +56,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    
 }
 
 .header-nav__list-link {
@@ -83,7 +84,7 @@
 
 .header-content {
     background: url(../img/header-bg.png) rgba(7, 15, 25, 0.75);
-    height: 90vh;
+    min-height: 100vh;
     background-size: cover;
     background-blend-mode: darken;
     display: flex;
@@ -229,6 +230,8 @@ body {
 .films-cards {
     display: flex;
     gap: 30px;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 }
 
 .films {
@@ -334,6 +337,8 @@ video {
 .coll-cards {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .coll {
@@ -377,6 +382,7 @@ video {
     background: linear-gradient(135deg, rgba(35, 35, 35, 0.80) 0%, rgba(11, 11, 11, 0.60) 100%), url(../img/series-2.jpg);
     width: 558px;
     background-size: cover;
+    background-position: center;
 }
 
 .series-second__cards-mini div {
@@ -416,7 +422,9 @@ video {
 
 .series-second__cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .series-second__cards-mini {
@@ -424,6 +432,7 @@ video {
     flex-wrap: wrap;
     gap: 20px 30px;
     width: 558px;
+    justify-content: center;
 }
 
 .series-second__cards-mini div:hover {
@@ -453,4 +462,10 @@ video {
 
 .footer a{
     margin-right: 50px;
+}
+
+.burger{
+    display: none;
+    font-size: 30px;
+    color: white;
 }
